@@ -83,3 +83,6 @@ function solution(target, arr) {
 let arr=[23, 87, 65, 12, 57, 32, 99, 81];
 console.log(solution(32, arr));
 ```
+
+#### 참고
+[(이코테 2021 강의 몰아보기) 5. 이진 탐색](https://www.youtube.com/watch?v=94RC-DsGMLo&t=328s) 
