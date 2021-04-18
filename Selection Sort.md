@@ -84,3 +84,7 @@ console.log(selectionSort(arr));
   ```javascript
   ?
   ```
+
+#### 참고
+[(이코테 2021 강의 몰아보기) 4. 정렬 알고리즘](https://www.youtube.com/watch?v=KGyK-pNvWos)  
+[[실전 알고리즘] 0x0E강 - 정렬 I](https://blog.encrypted.gg/955)
