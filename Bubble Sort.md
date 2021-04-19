@@ -23,7 +23,7 @@ O(N^2)
 (이를 통해 한 번의 반복이 끝났을 때, 범위 내 가장 큰 값이 맨 뒤로 보내지게 된다)
 
 #### 코드
-
+배열의 요소를 오름차순으로 정리하는 문제
 ```javascript
 function bubbleSort(arr) {
     let answer = arr;
