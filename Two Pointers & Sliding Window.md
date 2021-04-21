@@ -69,7 +69,7 @@ console.log(twoPointers(M,arr));
 # [ Sliding Window, 슬라이딩 윈도우 ]
 
 #### 시간복잡도
-O(N)
+O(N)  
 창문의 너비가 W인 경우, 최초의 창문에 대해서만 O(W), 이후로는 상수의 시간복잡도를 갖는다.
 
 #### 설명
