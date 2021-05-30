@@ -33,7 +33,7 @@ Queue를 활용한다.
 
 아래의 이진 트리를 넓이 우선 탐색
 
-![사진]()
+![사진](./bfs.png)
 
 ```javascript
 function solution() {
