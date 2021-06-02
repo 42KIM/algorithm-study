@@ -1,4 +1,4 @@
-# [ BFS ]
+# [ BFS, 너비 우선 탐색 ]
 
 #### 시간복잡도
 
@@ -33,7 +33,7 @@ Queue를 활용한다.
 
 아래의 이진 트리를 넓이 우선 탐색
 
-![사진](./bfs.png)
+![사진](/src/bfs.PNG)
 
 ```javascript
 function solution() {
