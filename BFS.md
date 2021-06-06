@@ -33,7 +33,7 @@ Queue를 활용한다.
 
 아래의 이진 트리를 넓이 우선 탐색
 
-![사진](/src/bfs.PNG)
+![bfs](https://user-images.githubusercontent.com/75300807/120921123-1e299800-c6fd-11eb-8d30-fa22bb4ea8e1.PNG)
 
 ```javascript
 function solution() {
