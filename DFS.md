@@ -37,6 +37,8 @@ Stack이나 재귀 함수를 사용한다.
 
 재귀 함수를 사용하여 이진 트리를 깊이 우선 탐색 (전위순회)
 
+![bfs](https://user-images.githubusercontent.com/75300807/120921123-1e299800-c6fd-11eb-8d30-fa22bb4ea8e1.PNG)
+
 ```javascript
 function solution(v) {
     let answer = [];
