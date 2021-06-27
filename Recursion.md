@@ -40,7 +40,21 @@
   - 재귀 깊이 (recursion depth)
     : 가장 처음 하는 호출을 포함한 중첩 호출의 최대 개수를 재귀 깊이라고 한다. 자바스크립트 엔진은 최대 재귀 깊이를 제한한다(약 만 개 ~ 십만 개). 재귀 깊이는 스택에 들어가는 실행 컨텍스트 수의 최댓값과 같다.
 
-
+### 조합 구하기
+```javascript
+function combination(arr, selectNum) {
+  const result = [];
+  if (selectNum === 1) return arr.map((v) => [v]);
+  arr.forEach((v, idx, arr) => {
+    const fixed = v;
+    const restArr = arr.slice(idx + 1);
+    const combinationArr = combination(restArr, selectNum - 1);
+    const combineFix = combinationArr.map((v) => [fixed, ...v]);
+    result.push(...combineFix);
+  });
+  return result;
+}
+```
 
 #### 참고
 [재귀와 스택](https://ko.javascript.info/recursion)
