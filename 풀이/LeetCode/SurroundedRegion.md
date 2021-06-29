@@ -8,7 +8,7 @@
 
 ### 풀이
 
-+ 내 풀이
+**내 풀이**
 
 ```javascript
 var solve = function(board) {
