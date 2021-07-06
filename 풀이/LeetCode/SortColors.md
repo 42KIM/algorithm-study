@@ -105,9 +105,9 @@ var sortColors = function(nums) {
     
     nums.length = 0;
     
-    for(let i=0; i<zero; i++) answer.push(0);
-    for(let i=0; i<one; i++) answer.push(1);
-    for(let i=0; i<two; i++) answer.push(2);
+    for(let i=0; i<zero; i++) nums.push(0);
+    for(let i=0; i<one; i++) nums.push(1);
+    for(let i=0; i<two; i++) nums.push(2);
 };
 ```
 
