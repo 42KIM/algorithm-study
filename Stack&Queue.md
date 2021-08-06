@@ -53,7 +53,49 @@
   console.log(answer);	// true
   ```
   
-  
+
+
+
+#### (+ 추가) 연결 리스트로 스택 구현하기
+
+```javascript
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class Stack {
+    constructor() {
+        this.top = null;
+        this.size = 0;
+    }
+    
+    push(value) {
+        const node = new Node(value);
+        node.next = this.top;
+        this.top = node;
+        this.size++;
+    }
+    
+    pop() {
+        const value = this.top.value;
+        this.top = this.top.next;
+        this.size--;
+        return value;
+    }
+    
+    size() {
+        return this.size;
+    }
+}
+```
+
+
+
+
+
 # [ Queue, 큐 ]
 
 + 한 쪽 끝에서 원소를 넣고 반대쪽 끝에서 원소를 뺄 수 있는 자료구조.
@@ -61,3 +103,82 @@
 + 먼저 들어간 데이터가 먼저 처리되는 First In First Out, FIFO 방식을 사용한다.
 + 제일 앞/뒤가 아닌 나머지 원소들의 확인, 변경이 *원칙적으로는* 불가능하다.
 + push(), shift() 함수를 통해 구현할 수 있다.
+
+
+
+#### 구현
+
++ 배열로 구현하기
+
+```javascript
+class Queue {
+    constructor() {
+        this.queue = [];
+        this.front = 0;
+        this.rear = 0;
+    }
+    
+    enqueue(value) {
+        this.queue[this.rear++] = value;
+    }
+    
+    dequeue() {
+        const value = this.queue[this.front];
+        delete this.queue[this.front];
+        this.front++;
+        return value;
+    }
+    
+    peek() {
+        return this.queue[this.front];
+    }
+    
+    size() {
+        return this.rear - this.front;
+    }
+}
+```
+
+
+
++ 연결 리스트로 구현하기
+
+```javascript
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class Queue {
+    constructor() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+    
+    enqueue(newValue) {
+        const newNode = new Node(newValue);
+        if(this.head === null) {
+            this.head = this.tail = newNode;
+        } else {
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+        this.size++;
+    }
+    
+    dequeue() {
+        const value = this.head.value;
+        this.head = this.head.next;
+        this.size--;
+        return value;
+    }
+    
+    peek() {
+        return this.head.value;
+    }
+}
+```
+
