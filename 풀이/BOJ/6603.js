@@ -1,3 +1,10 @@
+// [완전탐색]
+// BOJ 6603
+// https://www.acmicpc.net/problem/6603
+
+const input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+const testCases = input.map(tc => tc.split(" ").slice(1));
+
 function solution(testCase) {
   const answer = [];
   const check = Array.from({ length: testCase.length }).fill(false);
@@ -20,4 +27,7 @@ function solution(testCase) {
   answer.forEach(lotto => console.log(lotto));
 }
 
-solution(testCases);
+testCases.forEach(testCase => {
+  solution(testCase);
+  console.log('');
+});
