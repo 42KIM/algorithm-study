@@ -13,4 +13,4 @@
 
 # [ 자료구조 ]  
 + [스택 & 큐](https://github.com/42KIM/algorithm-study/blob/master/Stack%26Queue.md)  
-+ [힙(우선순위 큐)](https://github.com/42KIM/algorithm-study/blob/master/Priority%Queue&Heap.md)
++ [힙(우선순위 큐)](https://github.com/42KIM/algorithm-study/blob/master/Priority%20Queue%26Heap.md)
