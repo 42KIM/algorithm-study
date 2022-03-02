@@ -1,6 +1,6 @@
 // [우선순위 큐]
 // BOJ 2705
-//
+// https://www.acmicpc.net/problem/2075
 
 const rl = require('readline').createInterface({
   input: process.stdin,
