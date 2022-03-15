@@ -3,9 +3,10 @@
 #### 시간복잡도
 
 선형 탐색: O(N^2)  
-=> 방문해야 할 N개의 노드에 대해서, 매번 '그 다음 최단 거리 노드'를 찾는 과정에서 N번 순회를 하기 때문. 선형 탐색 방법은 특히 정점의 개수는 많은데 간선은 적을 때 매우 비효율적일 수 있다.  
+  => 방문해야 할 N개의 노드에 대해서, 매번 '그 다음 최단 거리 노드'를 찾는 과정에서 N번 순회를 하기 때문. 선형 탐색 방법은 특히 정점의 개수는 많은데 간선은 적을 때 매우 비효율적일 수 있다.  
+
 우선순위 큐: O(N * logN)  
-=> '그 다음 최단 거리 노드'를 찾는 과정에서 최소 힙을 이용하면 logN.
+  => '그 다음 최단 거리 노드'를 찾는 과정에서 최소 힙을 이용하면 logN.
 
 
 
@@ -28,6 +29,7 @@
 
 
 #### 코드
+![다익스트라](https://user-images.githubusercontent.com/75300807/158183935-9efe0ceb-6708-4974-97ad-4b7bec5ef8b6.PNG)
 
 + 선형 탐색 : 단방향 또는 양방향으로 연결된 6개의 노드가 있을 때, 최단 거리를 구하는 방법
 
@@ -203,9 +205,9 @@ console.log(s2(6, input));	// [0, 2, 3, 1, 2, 4 ]
 
 
 
-**#### 참고**
+#### 참고
 
 
 
-[[다익스트라 알고리즘(Dijkstra Algorithm) [ 실전 알고리즘 강좌(Algorithm Programming Tutorial) #25 ]](https://www.youtube.com/watch?v=611B-9zk2o4)
+[다익스트라 알고리즘(Dijkstra Algorithm) [ 실전 알고리즘 강좌(Algorithm Programming Tutorial) #25 ]](https://www.youtube.com/watch?v=611B-9zk2o4)
 
